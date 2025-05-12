@@ -1,8 +1,12 @@
-'use client';
+"use client";
 
 import React, { useState, useCallback } from 'react';
-import VectorMap from './VectorMap';
+// import VectorMap from './VectorMap';
 import ColorScaleRuler from './colorRuler';
+
+import dynamic from 'next/dynamic';
+
+const VectorMap = dynamic(() => import('./VectorMap'), { ssr: false });
 
 export default function MapGrid() {
   const [zoom, setZoom] = useState(5);

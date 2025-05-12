@@ -1,5 +1,4 @@
-// components/VectorMap.jsx
-'use client';
+"use client";
 
 import React, { useEffect } from 'react';
 import { MapContainer, TileLayer, useMap, useMapEvents } from 'react-leaflet';
